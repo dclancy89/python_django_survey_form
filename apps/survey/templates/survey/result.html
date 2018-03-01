@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'survey/css/style.css' %}">
+</head>
+<body class="result">
+
+	<div class="container">
+		<p class="title">Submitted Info</p>
+		<p>Name: <span>{{ request.session.name }}</span></p>
+		<p>Dojo Location: <span>{{ request.session.location }}</span></p>
+		<p>Favorite Language: <span>{{ request.session.language }}</span></p>
+		<p>Comment: <span>{{ request.session.comment }}</span></p>
+		<a href="/" class="button">Go Back</a>
+	</div>
+
+</body>
+</html>
